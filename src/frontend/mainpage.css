@@ -24,11 +24,11 @@ h1 {
   color: #1eaeff;
 }
 
-button {
+.button {
   position: absolute;
   width: 196px;
   height: 82px;
-  left: 700px;
+  left: 1000px;
   top: 50px;
 
   font-family: ABeeZee;
@@ -41,11 +41,28 @@ button {
   background-color: #274167;
 }
 
-button2 {
+.button2 {
   position: absolute;
   width: 196px;
   height: 82px;
-  left: 800px;
+  left: 1200px;
+  top: 50px;
+
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 5px;
+
+  color: #ffffff;
+  background-color: #274167;
+}
+
+.button3 {
+  position: absolute;
+  width: 196px;
+  height: 82px;
+  left: 1400px;
   top: 50px;
 
   font-family: ABeeZee;
@@ -56,4 +73,57 @@ button2 {
 
   color: #ffffff;
   background-color: #274167;
+}
+
+.h1{
+  position: absolute;
+  width: 500px;
+  height: 114px;
+  left: 40px;
+  top: 145px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #FFFFFF;
+}
+
+.menu{
+
+  position: absolute;
+  width: 617px;
+  height: 147px;
+  left: 439px;
+  top: 289px;
+
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 170px;
+
+  color: #1EAEFF;
+}
+
+.getstarted {
+  position: absolute;
+width: 443px;
+height: 87px;
+left: 513px;
+top: 592px;
+
+font-family: ABeeZee;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 95px;
+
+color: #1EAEFF;
+background-color: #2760A4;
+outline:none;
+box-shadow: none;
+
 }
