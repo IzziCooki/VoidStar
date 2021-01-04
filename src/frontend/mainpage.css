@@ -28,7 +28,7 @@ h1 {
   position: absolute;
   width: 196px;
   height: 82px;
-  left: 1000px;
+  left: 1800px;
   top: 50px;
 
   font-family: ABeeZee;
@@ -45,7 +45,7 @@ h1 {
   position: absolute;
   width: 196px;
   height: 82px;
-  left: 1200px;
+  left: 2000px;
   top: 50px;
 
   font-family: ABeeZee;
@@ -62,7 +62,7 @@ h1 {
   position: absolute;
   width: 196px;
   height: 82px;
-  left: 1400px;
+  left: 2200px;
   top: 50px;
 
   font-family: ABeeZee;
@@ -96,7 +96,7 @@ h1 {
   position: absolute;
   width: 617px;
   height: 147px;
-  left: 439px;
+  left: 939px;
   top: 289px;
 
   font-family: ABeeZee;
@@ -110,10 +110,11 @@ h1 {
 
 .getstarted {
   position: absolute;
-width: 443px;
-height: 87px;
-left: 513px;
-top: 592px;
+
+    width: 505px;
+    height: 158px;
+    left: 982px;
+    top: 557px;
 
 font-family: ABeeZee;
 font-style: normal;
@@ -125,5 +126,15 @@ color: #1EAEFF;
 background-color: #2760A4;
 outline:none;
 box-shadow: none;
+border-radius: 20px;
 
 }
+
+html {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.7; /* Other non-webkit browsers */
+    zoom: 70%; /* Webkit browsers */
+
+  resize: none;
+
+  }
