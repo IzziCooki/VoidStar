@@ -46,7 +46,10 @@ discord.get("/auth/discord/callback", async (req, res) => {
     simple: true,
   });
 
-  res.send(user);
+  res.redirect("/");
 });
 
-module.exports = discord;
+module.exports = {
+  discord,
+  user,
+};
