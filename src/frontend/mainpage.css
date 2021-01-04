@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+
+  background: #274167;
+}
+
+h1 {
+  position: absolute;
+  width: 275px;
+  height: 50px;
+  left: 38px;
+  top: 36px;
+
+  font-family: "ABeeZee", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 46px;
+
+  color: #1eaeff;
+}
+
+button {
+  position: absolute;
+  width: 196px;
+  height: 82px;
+  left: 700px;
+  top: 50px;
+
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 56px;
+
+  color: #ffffff;
+  background-color: #274167;
+}
+
+button2 {
+  position: absolute;
+  width: 196px;
+  height: 82px;
+  left: 800px;
+  top: 50px;
+
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 56px;
+
+  color: #ffffff;
+  background-color: #274167;
+}
