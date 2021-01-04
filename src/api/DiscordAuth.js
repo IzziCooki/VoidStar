@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const request = require("request-promise");
+const { PORT } = require("../utils/PORT.json");
 
 const discord = Router();
 
@@ -9,7 +10,9 @@ discord.get("/auth/discord", (req, res) => {
       "?client_id=" +
       process.env.CLIENT_ID +
       "&redirect_uri=" +
-      encodeURIComponent("http://localhost:8080/api/v1/auth/discord/callback") +
+      encodeURIComponent(
+        `http://localhost:${PORT}/api/v1/auth/discord/callback`
+      ) +
       "&response_type=code" +
       "&scope=identify%20email"
   );
@@ -29,7 +32,7 @@ discord.get("/auth/discord/callback", async (req, res) => {
       client_id: process.env.CLIENT_ID,
       client_secret: process.env.CLIENT_SECRET,
       grant_type: "authorization_code",
-      redirect_uri: "http://localhost:8080/api/v1/auth/discord/callback",
+      redirect_uri: `http://localhost:${PORT}/api/v1/auth/discord/callback`,
       scope: "identify email",
     },
     json: true,
@@ -46,7 +49,7 @@ discord.get("/auth/discord/callback", async (req, res) => {
     simple: true,
   });
 
-  res.send(user);
+  res.redirect("/dashboard");
 });
 
 module.exports = discord;
