@@ -49,3 +49,11 @@ Here are some instructions, to get set up with VoidStar, locally.
    This is the script used for development, and runs the application with `nodemon`, a tool used to make development easier.
 
 2. If you see a success message in the console that says `✔️ Server started on port 8000`, then it has succeeded. Head over to `http://localhost:8000`, and use the app there!
+
+## ⚙️ VoidStar API
+
+The VoidStar API is extremely powerful, as it is secure, has a great deal of endpoints, and gives developers customizability. This section will be about how to get started using our API.
+
+### Authentication
+
+We use Discord and GitHub OAuth in VoidStar, which means that authentication is secured with Discord and GitHub.
