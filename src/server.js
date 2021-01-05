@@ -7,7 +7,6 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const { PORT } = require("./utils/PORT.json");
-const { runInThisContext } = require("vm");
 
 class Server {
   constructor() {
