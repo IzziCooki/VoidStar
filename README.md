@@ -78,7 +78,7 @@ To gain access to the other endpoints, a user needs to be authenticated. Your us
 
 This endpoint will redirect you to Discord's Authorization page, where you will give access to certain information.
 
-### Tasks Endpoints
+### 📝 Tasks Endpoints
 
 **POST** - /api/v1/tasks/create/{task-title}/{task-description}/{task-category}
 <br>
@@ -159,3 +159,7 @@ Permanently delete a task, and drop it from the deleted database.
 **task-id** - The to-be-perm-deleted task's ID.
 
 _Rate Limit_: **20** requests per **1** minute
+
+---
+
+### 🤖 VoidBot Endpoints
