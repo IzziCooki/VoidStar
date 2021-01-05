@@ -9,6 +9,7 @@ Created by **EternalizedMoonlight#1145** and **IzziCooki#0001**.
 - React (Soon)
 - Node JS / NPM
 - PostgreSQL
+- Prisma (ORM)
 
 ## 📜 Local Deployment Instructions
 
