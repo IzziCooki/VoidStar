@@ -8,7 +8,7 @@ discord.get("/auth/discord", (req, res) => {
   res.redirect(
     "https://discord.com/api/oauth2/authorize" +
       "?client_id=" +
-      process.env.CLIENT_ID +
+      process.env.D_CLIENT_ID +
       "&redirect_uri=" +
       encodeURIComponent(
         `http://localhost:${PORT}/api/v1/auth/discord/callback`
@@ -29,8 +29,8 @@ discord.get("/auth/discord/callback", async (req, res) => {
     },
     form: {
       code,
-      client_id: process.env.CLIENT_ID,
-      client_secret: process.env.CLIENT_SECRET,
+      client_id: process.env.D_CLIENT_ID,
+      client_secret: process.env.D_CLIENT_SECRET,
       grant_type: "authorization_code",
       redirect_uri: `http://localhost:${PORT}/api/v1/auth/discord/callback`,
       scope: "identify email",
