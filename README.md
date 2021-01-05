@@ -17,13 +17,9 @@ Here are some instructions, to get set up with VoidStar, locally.
 ### ⚙️ Basic Setup
 
 1. First, you need to clone the repository locally. In your terminal once you've created a folder, run the command `git clone https://github.com/eternalmoon1234/VoidStar.git`.
-
-<br>
-
+   <br>
 2. Next, to install all of the dependencies locally, run the command `npm install`, in the project's directory.
-
-<br>
-
+   <br>
 3. Thirdly, you need to set up the Database. Have a PostgreSQL server running and create a database by running the command `CREATE DATABASE voidstar;`.
    <br>
 
