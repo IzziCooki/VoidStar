@@ -20,8 +20,8 @@ CREATE TABLE calendar (
 CREATE TABLE usercount (
     created_users int,
     online_users int
-)
+);
 
 CREATE TABLE requestcount (
     requestcount int
-)
+);
