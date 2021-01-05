@@ -59,8 +59,12 @@ class Server {
     });
     this.app.use(express.static(path.join(__dirname, "frontend")));
 
-    this.app.use("/api/v1", require("./api/auth/DiscordAuth"));
-    this.app.use("/api/v1", require("./api/general/General"));
+    this.app.use(
+      "/api/v1",
+      require("./api/auth/DiscordAuth"),
+      require("./api/auth/GitHubAuth"),
+      require("./api/general/General")
+    );
   }
 }
 
