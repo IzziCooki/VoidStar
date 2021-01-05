@@ -70,13 +70,17 @@ To prevent users and bots from spamming the API, we have set up rate limiting. T
 
 We use Discord and GitHub OAuth in VoidStar, which means that authentication is secured with Discord and GitHub.
 
-To gain access to the other endpoints, a user needs to be authenticated. Your users will need to go through either Discord, or GitHub OAuth, to access the API.
+To gain access to the other endpoints, a user needs to be authenticated. Your users will need to go through either Discord, or GitHub OAuth, to access the API. There are two ways to authenticate, with two services.
 
 > Please remember, you can only view your own personal information, such as tasks, your calendar, and other data.
 
 **POST** - /api/v1/auth/discord
 
 This endpoint will redirect you to Discord's Authorization page, where you will give access to certain information.
+
+**POST** - /api/v1/auth/github
+
+This endpoint will redirect you to GitHub's Authorization page, where you will give access to certain information.
 
 ### 📝 Tasks Endpoints
 
