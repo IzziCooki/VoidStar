@@ -6,3 +6,26 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model calendar {
+  event_id          Int @id
+  event_time_ms     Int
+  event_title       String
+  event_description String
+}
+
+model requestcount {
+  requestcount Int @id
+}
+
+model tasks {
+  task_id          Int @id
+  task_title       String
+  task_description String
+  task_category    String
+}
+
+model usercount {
+  created_users Int @unique
+  online_users  Int @unique
+}
