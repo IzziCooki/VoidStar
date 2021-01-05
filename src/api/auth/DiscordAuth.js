@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const request = require("request-promise");
-const { PORT } = require("../utils/PORT.json");
+const { PORT } = require("../../utils/PORT.json");
 
 const discord = Router();
 
