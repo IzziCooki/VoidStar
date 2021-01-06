@@ -6,7 +6,7 @@ import {
   title_error,
   description_error,
   category_error,
-} from "../errors/errors";
+} from "../errors/Errors";
 
 export const createtask = Router();
 export const prisma = new PrismaClient();
@@ -16,7 +16,7 @@ createtask.get(
   async (req: Request, res: Response) => {
     let state: string = "error";
 
-    let generatedTaskID: number = uuid();
+    let generatedTaskID: string = uuid();
 
     const titleParam: string = req.params.title;
     const descriptionParam: string = req.params.description;
