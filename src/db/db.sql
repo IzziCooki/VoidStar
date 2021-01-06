@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS usercount;
 DROP TABLE IF EXISTS requestcount;
 
 CREATE TABLE tasks (
-    task_id int,
+    task_id TEXT,
     task_title TEXT,
     task_description TEXT,
     task_category TEXT
