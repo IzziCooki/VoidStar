@@ -1,3 +1,9 @@
+//Import Routes
+import { discord as DiscordOAuthEndpoint } from "./api/auth/DiscordOAuthEndpoint";
+import { github as GitHubOAuthEndpoint } from "./api/auth/GitHubOAuthEndpoint";
+import { general as GeneralEndpoints } from "./api/general/GeneralEndpoints";
+import { createtask as CreateTaskEndpoint } from "./api/tasks/CreateTaskEndpoint";
+
 import express, { Request, Response, NextFunction } from "express";
 
 import consola, { Consola } from "consola";
@@ -51,9 +57,10 @@ export class Server {
 
     this.app.use(
       "/api/v1",
-      require("./api/auth/DiscordAuth"),
-      require("./api/auth/GitHubAuth"),
-      require("./api/general/General")
+      DiscordOAuthEndpoint,
+      GitHubOAuthEndpoint,
+      GeneralEndpoints,
+      CreateTaskEndpoint
     );
   }
 }

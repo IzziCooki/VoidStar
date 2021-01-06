@@ -1,10 +1,11 @@
-const { Router } = require("express");
-const request = require("request-promise");
-const { PORT } = require("../../utils/PORT.json");
+import { Router, Request, Response, NextFunction } from "express";
+import request from "request-promise";
 
-const discord = Router();
+import { PORT } from "../../utils/PORT.json";
 
-discord.get("/auth/discord", (req, res) => {
+export const discord = Router();
+
+discord.get("/auth/discord", (req: Request, res: Response) => {
   res.redirect(
     "https://discord.com/api/oauth2/authorize" +
       "?client_id=" +
@@ -18,7 +19,7 @@ discord.get("/auth/discord", (req, res) => {
   );
 });
 
-discord.get("/auth/discord/callback", async (req, res) => {
+discord.get("/auth/discord/callback", async (req: Request, res: Response) => {
   let code = req.query.code;
 
   let accessToken = await request({
@@ -51,5 +52,3 @@ discord.get("/auth/discord/callback", async (req, res) => {
 
   res.redirect("/dashboard");
 });
-
-module.exports = discord;

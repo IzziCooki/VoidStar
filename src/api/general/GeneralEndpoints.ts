@@ -17,5 +17,3 @@ general.get("/general/requestcount", async (req: Request, res: Response) => {
 
   res.json(requestcount);
 });
-
-module.exports = general;

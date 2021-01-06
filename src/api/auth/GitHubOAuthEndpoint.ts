@@ -1,15 +1,15 @@
-const { Router } = require("express");
-const axios = require("axios");
+import { Router, Request, Response, NextFunction } from "express";
+import axios from "axios";
 
-const github = Router();
+export const github = Router();
 
-github.get("/auth/github", (req, res) => {
+github.get("/auth/github", (req: Request, res: Response) => {
   res.redirect(
     `https://github.com/login/oauth/authorize?client_id=${process.env.GH_CLIENT_ID}`
   );
 });
 
-github.get("/auth/github/callback", (req, res) => {
+github.get("/auth/github/callback", (req: Request, res: Response) => {
   let code = req.query.code;
 
   axios({
@@ -24,5 +24,3 @@ github.get("/auth/github/callback", (req, res) => {
     res.send(response.data);
   });
 });
-
-module.exports = github;
