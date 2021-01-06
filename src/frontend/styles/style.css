@@ -14,3 +14,20 @@
   background-color: black;
   border: 2px solid white;
 }
+
+.display-1 {
+  color: #037aff;
+  font-weight: bold;
+  position: relative;
+  font-size: 160px;
+  top: 6rem;
+}
+
+.btn.get-started {
+  position: relative;
+  top: 10rem;
+  font-size: 3rem;
+  background-color: #2760a4;
+  color: #1eaeff;
+  border-radius: 30px;
+}
