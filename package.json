@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "dev": "nodemon src/app.ts",
-    "lint": "prettier --write ."
+    "lint": "prettier --write .",
+    "runVoidBot": "python src/frontend/voidbot/VoidBot.py"
   },
   "keywords": [],
   "author": "",

@@ -8,6 +8,7 @@ Created by **EternalizedMoonlight#1145** and **IzziCooki#0001**.
 
 - TypeScript
 - Node JS / NPM
+- Python (for VoidBot)
 - PostgreSQL
 - Prisma (ORM)
 
