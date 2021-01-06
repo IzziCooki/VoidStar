@@ -15,11 +15,11 @@ model calendar {
 }
 
 model requestcount {
-  requestcount Int @id
+  requestcount Int @unique
 }
 
 model tasks {
-  task_id          Int @id
+  task_id          String @id
   task_title       String
   task_description String
   task_category    String
