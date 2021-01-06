@@ -143,7 +143,7 @@ _Rate Limit_: **60** requests per **1** minute
 **DELETE** - /api/v1/tasks/delete/{task-id}
 <br>
 
-Delete a certain task, by its task ID. The task is moved to a deleted database, but being hashed. If a user wants to restore a task, it is moved back to the main Database. After a certain period, the task will be fully dropped.
+Delete a certain task, by its task ID. The task is moved to a deleted database, but hashed first. If a user wants to restore a task, it is moved back to the main Database. After a certain period, the task will be fully dropped.
 
 #### Request Parameters
 
