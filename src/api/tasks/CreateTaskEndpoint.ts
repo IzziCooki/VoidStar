@@ -32,7 +32,7 @@ createtask.get(
     });
 
     if (createdTask) {
-      return res.json({
+      res.json({
         state: state.replace("error", "success"),
         taskID: generatedTaskID,
         submitted_title: titleParam,
@@ -40,15 +40,15 @@ createtask.get(
         submitted_category: categoryParam,
       });
     } else if (!createdTask) {
-      return res.json({ state: state });
+      res.json({ state: state });
     }
 
     if (!titleParam) {
-      return res.send(JSON.parse(title_error));
+      res.send(JSON.parse(title_error));
     } else if (!descriptionParam) {
-      return res.send(JSON.parse(description_error));
+      res.send(JSON.parse(description_error));
     } else if (!categoryParam) {
-      return res.send(JSON.parse(category_error));
+      res.send(JSON.parse(category_error));
     }
   }
 );

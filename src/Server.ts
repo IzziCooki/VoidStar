@@ -19,6 +19,14 @@ export class Server {
   public app: express.Application;
   public logger: Consola = consola;
 
+  public constructor() {
+    this.app = express();
+
+    this.setConfig();
+    this.setRequestLogger();
+    this.setRoutes();
+  }
+
   public start() {
     this.setConfig();
     this.setRequestLogger();
