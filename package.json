@@ -2,10 +2,10 @@
   "name": "voidstar",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/app.ts",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "lint": "prettier --write ."
   },
   "keywords": [],
