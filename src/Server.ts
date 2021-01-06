@@ -19,7 +19,7 @@ export class Server {
   public app: express.Application;
   public logger: Consola = consola;
 
-  start() {
+  public start() {
     this.setConfig();
     this.setRequestLogger();
     this.setRoutes();
@@ -29,7 +29,7 @@ export class Server {
     });
   }
 
-  setConfig() {
+  private setConfig() {
     this.app.use(express.json());
     this.app.use(cors());
     this.app.use(bodyParser.urlencoded({ extended: true }));
@@ -37,7 +37,7 @@ export class Server {
     dotENV.config();
   }
 
-  setRequestLogger() {
+  private setRequestLogger() {
     this.app.use(async (req: Request, res: Response, next: NextFunction) => {
       console.log(`[${req.method} - ${req.path}]`);
 
@@ -45,7 +45,7 @@ export class Server {
     });
   }
 
-  setRoutes() {
+  private setRoutes() {
     this.app.get("/", (req: Request, res: Response) => {
       res.sendFile(__dirname + "/frontend/index.html");
     });
