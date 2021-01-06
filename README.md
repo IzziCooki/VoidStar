@@ -6,7 +6,7 @@ Created by **EternalizedMoonlight#1145** and **IzziCooki#0001**.
 
 ### 📚 Tech Stack
 
-- React (Soon)
+- TypeScript
 - Node JS / NPM
 - PostgreSQL
 - Prisma (ORM)
