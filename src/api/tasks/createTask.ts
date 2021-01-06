@@ -1,26 +1,26 @@
-const { Router } = require("express");
-const { PrismaClient } = require("@prisma/client");
+import { Router, Request, Response, NextFunction } from "express";
+import { PrismaClient } from "@prisma/client";
 
-const { uuid } = require("../../utils/uuid");
-const {
+import { uuid } from "../../utils/uuid";
+import {
   title_error,
   description_error,
   category_error,
-} = require("../errors/errors");
+} from "../errors/errors";
 
-const createtask = Router();
-const prisma = new PrismaClient();
+export const createtask = Router();
+export const prisma = new PrismaClient();
 
 createtask.get(
   "/tasks/create/:title/:description/:category",
-  async (req, res) => {
-    let state = "error";
+  async (req: Request, res: Response) => {
+    let state: string = "error";
 
-    let generatedTaskID = uuid();
+    let generatedTaskID: number = uuid();
 
-    const titleParam = req.params.title;
-    const descriptionParam = req.params.description;
-    const categoryParam = req.params.category;
+    const titleParam: string = req.params.title;
+    const descriptionParam: string = req.params.description;
+    const categoryParam: string = req.params.category;
 
     const createdTask = await prisma.tasks.create({
       data: {
@@ -50,15 +50,5 @@ createtask.get(
     } else if (!categoryParam) {
       return res.send(JSON.parse(category_error));
     }
-    trin;
-    if (
-      !typeof categoryParam === "string" ||
-      !typeof titleParam === "string" ||
-      !typeof descriptionParam === "string"
-    ) {
-      return res.json({ error: "This parameter must be of type string!" });
-    }
   }
 );
-
-module.exports = createtask;
