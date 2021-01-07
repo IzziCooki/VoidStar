@@ -98,8 +98,6 @@ canvas {
   margin: 0 auto;
 }
 
-//start of animated stars
-
 @keyframes typing {
   from {
     width: 0;
@@ -687,7 +685,6 @@ canvas {
     367px 42px #fff, 100px 690px #fff, 1831px 458px #fff, 1884px 1878px #fff,
     814px 1013px #fff;
 }
-
 
 #title {
   position: absolute;
