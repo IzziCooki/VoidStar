@@ -69,8 +69,8 @@ canvas {
   left: 0;
 }
 .btn.get-started {
-  animation: MoveUpDown 4s linear infinite;
   animation: pop-in 0.8s ease-out forwards;
+  animation: MoveUpDown 4s linear infinite;
 }
 
 .display-1 {
@@ -85,6 +85,25 @@ canvas {
 .navbar-brand {
   animation: popout 1s ease;
   -webkit-animation: popout 1s ease;
+}
+
+.desc {
+  position: relative;
+  top: 7rem;
+  color: white;
+  animation: typing 3.5s steps(40, end);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes popout {
@@ -115,7 +134,7 @@ canvas {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
 }
 
