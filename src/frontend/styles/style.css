@@ -71,6 +71,7 @@ canvas {
 .btn.get-started {
   animation: pop-in 0.8s ease-out forwards;
   animation: MoveUpDown 4s linear infinite;
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
 }
 
 .display-1 {
