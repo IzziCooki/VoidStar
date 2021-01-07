@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./styles//style.css" />
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <title>VoidStar</title>
-  </head>
-  <body style="background-color: #274167">
-    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary">
-      <a class="navbar-brand" href="/">VoidStar</a>
-
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+         crossorigin="anonymous"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"
+         ></script>
+      <link rel="stylesheet" href="./styles//style.css" />
+      <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+      <title>VoidStar</title>
+   </head>
+   <body style="background-color: #274167"></body>
+   <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary">
+      <a class="navbar-brand " href="/">VoidStar</a>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/api/v1/auth/github"
-              ><button type="button" class="btn github">
-                Login with GitHub
-              </button></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/v1/auth/discord"
-              ><button type="button" class="btn discord">
-                Login with Discord
-              </button></a
-            >
-          </li>
-        </ul>
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link nav-link-1" href="/api/v1/auth/github"
+                  ><button type="button" class="btn github">
+               Login with GitHub
+               </button></a
+                  >
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/api/v1/auth/discord"
+                  ><button type="button" class="btn discord">
+               Login with Discord
+               </button></a
+                  >
+            </li>
+         </ul>
       </div>
-    </nav>
-    <div class="text-center">
+   </nav>
+   <div class="text-center">
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='title'>
+         <span>
+         </span>
+         <br>
+         <span>
+         </span>
+      </div>
       <h1 class="display-1">VoidStar</h1>
       <a><button class="btn get-started" type="button">Get Started</button></a>
-    </div>
-  </body>
+   </div>
+   </body>
 </html>
