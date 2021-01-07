@@ -9,8 +9,6 @@ bot = ChatBot(
     logic_adapters=['chatterbot.logic.BestMatch','chatterbot.logic.TimeLogicAdapter'],
 )
 
-
-
 corpus_trainer = ChatterBotCorpusTrainer(bot)
 corpus_trainer.train("chatterbot.corpus.english")
 

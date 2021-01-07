@@ -58,9 +58,6 @@ export class Server {
       res.sendFile(__dirname + "/frontend/index.html");
     });
 
-    this.app.get("/dashboard", (req: Request, res: Response) => {
-      res.sendFile(__dirname + "/frontend/dashboard.html");
-    });
     this.app.use(express.static(path.join(__dirname, "frontend")));
 
     this.app.use(

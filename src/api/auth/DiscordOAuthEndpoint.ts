@@ -50,5 +50,5 @@ discord.get("/auth/discord/callback", async (req: Request, res: Response) => {
     simple: true,
   });
 
-  res.redirect("/dashboard");
+  res.json(user);
 });
