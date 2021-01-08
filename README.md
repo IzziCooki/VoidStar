@@ -2,7 +2,7 @@
 
 This is our submission for the Tech With Tim codejam.
 
-Created by **EternalizedMoonlight#1145** and **IzziCooki#0001**.
+Created by **EternalMoon1234#1145** and **IzziCooki#0001**.
 
 ### 📚 Tech Stack
 
