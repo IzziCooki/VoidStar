@@ -32,7 +32,9 @@ Here are some instructions, to get set up with VoidStar, locally.
 1. In the `SAMPLE.env` file, you will find two other keys, called **CLIENT_ID** and **CLIENT_SECRET**. These values are secrets used to connect to Discord's OAuth API.
    <br>
 
-   To make authentication work, head over to `https://discord.com/developers`. Create a new application called **VoidStar**. Copy the client ID and client secret, and paste it in your `.env` file, accordingly.
+   To make authentication work, head over to `https://discord.com/developers`. Create a new application called **VoidStar**. Next, head to the OAuth tab, and add a redirect URI with the value of `http://localhost:8000/api/v1/auth/discord/callback`. The redirect URI tells Discord where to redirect you after to authentication is completed. Copy the client ID and client secret, and paste it in your `.env` file, accordingly.
+
+   Additionally, you also need to set up GitHub OAuth, so locally, you can authenticate with GitHub. Visit `https://github.com/settings/applications/new`, and create an application called **VoidStar**, and specify the redirect URI to `http://localhost:8000/api/v1/auth/github/callback`. The redirect URI tells GitHub where to redirect you after to authentication is completed.
 
 ### 🚀 Deploy
 
