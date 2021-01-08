@@ -27,20 +27,36 @@
          ></script>
       <link rel="stylesheet" href="./styles//style.css" />
       <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <title>VoidStar</title>
    </head>
    <body style="background-color: #274167"></body>
-   <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary">
-      <a class="navbar-brand " href="/">VoidStar</a>
+   <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="navbar-brand" href="/">VoidStar</a>
+              </li>
+              <li class="nav-item down">
+                  <a class="nav-link" href="/">About Us</a>
+              </li>
+              <li class="nav-item down">
+               <a class="nav-link" href="/">Get Started</a>
+           </li>
+          </ul>
+      </div>
+      <div class="mx-auto order-0">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-               <a class="nav-link nav-link-1" href="/api/v1/auth/github"
-                  ><button type="button" class="btn github">
-               Login with GitHub
-               </button></a
-                  >
-            </li>
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link nav-link-1" href="/api/v1/auth/github"
+            ><button type="button" class="btn github">
+         Login with GitHub
+         </button></a
+            >
             <li class="nav-item">
                <a class="nav-link nav-link-2" href="/api/v1/auth/discord"
                   ><button type="button" class="btn discord">
@@ -48,9 +64,10 @@
                </button></a
                   >
             </li>
-         </ul>
+          </ul>
       </div>
-   </nav>
+  </nav>
+
    <div class="text-center">
       <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
       <span>
