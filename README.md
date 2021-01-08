@@ -41,11 +41,11 @@ Here are some instructions, to get set up with VoidStar, locally.
 
    #### Scripts
 
-   `npm run start`
+   `yarn serve`
    <br>
-   The script to start the application with node.
+   The script to serve the application with node.
 
-   `npm run dev`
+   `yarn serve-dev`
    <br>
    This is the script used for development, and runs the application with `nodemon`, a tool used to make development easier.
 
