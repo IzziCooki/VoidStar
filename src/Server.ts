@@ -13,6 +13,9 @@ import * as bodyParser from "body-parser";
 import path from "path";
 import * as dotENV from "dotenv";
 
+//Middlewares
+import { isAuthenticated } from "./api/middlewares/isAuthenticated";
+
 import { PORT } from "./utils/PORT.json";
 
 export class Server {
@@ -57,6 +60,12 @@ export class Server {
     this.app.get("/", (req: Request, res: Response) => {
       res.sendFile(__dirname + "/frontend/index.html");
     });
+
+    this.app.get(
+      "/dashboard",
+      isAuthenticated,
+      (req: Request, res: Response) => {}
+    );
 
     this.app.use(express.static(path.join(__dirname, "frontend")));
 
