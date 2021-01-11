@@ -3,7 +3,6 @@ const c = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
 class Star {
   constructor() {
     //initializing
@@ -44,7 +43,7 @@ class Star {
   }
 }
 
-let speed = 0.003;
+let speed = 0.03;
 let stars = [];
 
 //create 1500 stars (objects)
