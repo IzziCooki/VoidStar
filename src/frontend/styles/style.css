@@ -93,6 +93,13 @@ canvas {
   white-space: nowrap;
   margin: 0 auto;
 }
+
+.wrapper {
+  position: relative;
+  top: 10rem;
+  color: white;
+}
+
 .star-logo {
   position: relative;
   border: none;
