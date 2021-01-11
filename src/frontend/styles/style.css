@@ -89,8 +89,9 @@ canvas {
 
 .wrapper {
   position: relative;
-  top: 10rem;
+  top: 37rem;
   color: white;
+  background-color: #33c1ff;
 }
 
 .star-logo {
