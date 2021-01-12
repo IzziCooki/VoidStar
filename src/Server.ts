@@ -61,6 +61,14 @@ export class Server {
       res.sendFile(__dirname + "/frontend/index.html");
     });
 
+    this.app.get("/about", (req: Request, res: Response) => {
+      res.sendFile(__dirname + "/frontend/views/about.html");
+    });
+
+    this.app.get("/quickstart", (req: Request, res: Response) => {
+      res.sendFile(__dirname + "/frontend/views/get-started.html");
+    });
+
     this.app.get(
       "/dashboard",
       isAuthenticated,
