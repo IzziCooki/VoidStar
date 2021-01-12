@@ -58,7 +58,7 @@ class Star {
   }
 }
 
-let speed = 0.03;
+let speed = 0.02;
 let stars = [];
 
 //create 1500 stars (objects)
