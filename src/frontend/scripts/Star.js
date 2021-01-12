@@ -3,6 +3,21 @@ const c = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+window.addEventListener("wheel", (event) => {
+  c.strokeStyle =
+    "rgb(" +
+    Math.random() * 255 +
+    ", " +
+    Math.random() * 255 +
+    ", " +
+    Math.random() * 255 +
+    ")";
+  if (event.deltaY < 0) speed *= 1.1;
+  else speed *= 0.9;
+  if (speed < 0.01) speed = 0.01;
+  else if (speed > 0.1) speed = 0.1;
+});
+
 class Star {
   constructor() {
     //initializing
