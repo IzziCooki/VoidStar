@@ -1,8 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 html,
 body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+.about-title {
+  color: white;
+  font-size: 80px;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+.about-desc {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 30px;
+  font-family: Montserrat;
 }
 
 .navbar-brand {
