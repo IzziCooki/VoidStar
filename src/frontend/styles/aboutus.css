@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.about-title {
+  color: white;
+  font-size: 80px;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+.about-desc {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 30px;
+  font-family: Montserrat;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.nav-item.down {
+  position: relative;
+  top: 9px;
+  animation: pop-in 0.8s ease-out forwards;
+}
+
+.text-center {
+    position: relative;
+  top: 9px;
+
+}
+.navbar-brand-1 .btn:hover {
+  background-color: black;
+}
+.btn.discord {
+  background-color: #5770cc;
+  color: white;
+  border: 2px solid white;
+}
+.btn.github {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+.display-1 {
+  color: #037aff;
+  font-weight: bold;
+  position: relative;
+  font-size: 160px;
+  top: 6rem;
+}
+.btn.get-started {
+  position: relative;
+  top: 10rem;
+  font-size: 3rem;
+  background-color: #2760a4;
+  color: #1eaeff;
+  border-radius: 30px;
+}
+.btn.get-started:hover {
+  background-color: rgb(81, 81, 173);
+}
+.nav-link-1 {
+  border-radius: 20px;
+}
+.nav-link-1:hover {
+  background-color: rgb(198, 198, 216);
+}
+.nav-link-2 {
+  border-radius: 20px;
+}
+.nav-link-2:hover {
+  background-color: rgb(198, 198, 216);
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn.get-started {
+  animation: pop-in 0.8s ease-out forwards;
+  animation: MoveUpDown 4s linear infinite;
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 39);
+}
+.display-1 {
+  animation: pop-in 0.5s ease-out forwards;
+}
+.btn.github,
+.btn.discord {
+  animation: pop-in 0.8s ease-out forwards;
+}
+.navbar-brand {
+  animation: popout 1s ease;
+  -webkit-animation: popout 1s ease;
+}
+.desc {
+  position: relative;
+  top: 7rem;
+  color: white;
+  animation: typing 3.5s steps(40, end);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  top: 37rem;
+  color: white;
+  background-color: #33c1ff;
+}
+
+.star-logo {
+  position: relative;
+  border: none;
+  background-color: #037aff;
+  top: 20;
+  left: 0;
+  background-size: 265%;
+  z-index: 1;
+}
+.star-logo btn:hover {
+  background-color: #24568f;
+}
+
+.created-by{
+  margin-top:10%;
+  background-color: #33c1ff;
+  border-radius: 5%;
+  
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes popout {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes popout {
+  from {
+    -webkit-transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes MoveUpDown {
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes popout {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes popout {
+  from {
+    -webkit-transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes MoveUpDown {
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
