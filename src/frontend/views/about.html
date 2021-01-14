@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/style.css" />
-  </head>
-  <body style="background-color: #2f60b0">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-      <div
-        class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
-      >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="navbar-brand" href="/">VoidStar</a>
-          </li>
-          <li class="nav-item down">
-            <a class="nav-link" href="/about">About Us</a>
-          </li>
-          <li class="nav-item down">
-            <a class="nav-link" href="/quickstart">Get Started</a>
-          </li>
-        </ul>
+   <head>
+      <canvas id="starField"></canvas>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+         crossorigin="anonymous"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"
+         ></script>
+      <link rel="stylesheet" href="aboutus.css" />
+      <title>VoidStar</title>
+   </head>
+   <body style="background-color: #274167"></body>
+   <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="navbar-brand" href="/">VoidStar</a>
+            </li>
+            <li class="nav-item down">
+               <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item down">
+               <a class="nav-link" href="/quickstart">Get Started</a>
+            </li>
+         </ul>
       </div>
       <div class="mx-auto order-0">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target=".dual-collapse2"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+         <span class="navbar-toggler-icon"></span>
+         </button>
       </div>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-          <a class="nav-link nav-link-1" href="/api/v1/auth/github"
-            ><button type="button" class="btn github">
-              Login with GitHub
+         <ul class="navbar-nav ml-auto">
+            <a class="nav-link nav-link-1" href="/api/v1/auth/github"
+               ><button type="button" class="btn github">
+            Login with GitHub
             </button></a
-          >
-          <li class="nav-item">
-            <a class="nav-link nav-link-2" href="/api/v1/auth/discord"
-              ><button type="button" class="btn discord">
-                Login with Discord
-              </button></a
-            >
-          </li>
-        </ul>
+               >
+            <li class="nav-item">
+               <a class="nav-link nav-link-2" href="/api/v1/auth/discord"
+                  ><button type="button" class="btn discord">
+               Login with Discord
+               </button></a
+                  >
+            </li>
+         </ul>
       </div>
-    </nav>
-    <div class="text-center">
-      <h1 class="about-title">Why VoidStar?</h1>
-      <p class="about-desc">
-        VoidStar is a solution to help with your organization's project
-        management, with ease.<br />
-        In our software, we use AI-powered technology, unlike others, which
-        makes <br />us stand out from our competitors.
-      </p>
-    </div>
-  </body>
+   </nav>
+   <div class="text-center">
+      <span>
+         <h1 class="display-1">About US</h1>
+      </span>
+      <div class="created-by">
+         <p>Void Star was created by EternalMoon1234#1145 and IzziCooki#0001</p>
+      </div>
+      <div class="container">
+         <dib>
+            <div class="section group">
+               <div class="col span_1_of_3" style="color:aliceblue;">
+                  <b>AI-fueled Technology</b>
+                  <br>Using Wit.AI, we created a chatbot that automatically creates tasks that you want.
+               </div>
+               <div class="col span_1_of_3">
+                  <b>Modern Interface</b>
+                  <br>Our clean and effient interface makes it easier than ever to manage you projects.
+               </div>
+               <div class="col span_1_of_3">
+                  <b>Task Management</b>
+                  <br>The simple to use Task Managment Systems helps you keep up to date on all you projects.
+               </div>
+            </div>
+         </dib>
+      </div>
+      <div>
+         <a><button class="btn get-started" type="button">Get Started</button></a>
+      </div>
+   </div>
+   </div>
 </html>
